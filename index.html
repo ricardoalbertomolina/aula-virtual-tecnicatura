@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecnicatura - Acceso a Clases</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    color: #2e4a3a;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1b5e20;
+  }
+
+  /* Imagen de horarios */
+  .horarios {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .horarios img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* Lista de materias */
+  .materias {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .materia {
+    display: block;
+    background: #ffffff;
+    color: #1b5e20;
+    text-decoration: none;
+    padding: 18px 22px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-left: 6px solid #43a047;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .materia:hover {
+    background: #43a047;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(67,160,71,0.4);
+  }
+
+  .materia::after {
+    content: "🎥 Unirse";
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.7;
+  }
+
+  footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #558b2f;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.4rem; }
+    .materia { font-size: 1rem; padding: 15px 18px; }
+    .materia::after { content: "🎥"; }
+  }
+</style>
+</head>
+<body>
+
+  <h1>📚 TSDS</h1>
+
+  <!-- IMAGEN DE HORARIOS -->
+  <div class="horarios">
+    <img src="horarios.jpg" alt="Horarios de clases">
+  </div>
+
+  <!-- LISTA DE MATERIAS -->
+  <div class="materias">
+    <a class="materia" href="https://meet.google.com/ivy-bnvy-kwx" target="_blank" rel="noopener">
+      1) Módulo Programador
+    </a>
+    <a class="materia" href="https://meet.google.com/uhe-quos-pfv" target="_blank" rel="noopener">
+      2) Arquitectura de las Computadoras
+    </a>
+    <a class="materia" href="https://meet.google.com/exi-hggo-vfk" target="_blank" rel="noopener">
+      3) Matemática y Lógica
+    </a>
+    <a class="materia" href="https://meet.google.com/gwn-xunc-gyb" target="_blank" rel="noopener">
+      4) Introducción al Mundo del Trabajo
+    </a>
+    <a class="materia" href="https://meet.google.com/vmn-tqct-ytc" target="_blank" rel="noopener">
+      5) Sistema y Organización
+    </a>
+    <a class="materia" href="https://meet.google.com/zej-aqvj-rfa" target="_blank" rel="noopener">
+      6) Competencias Comunicacionales II
+    </a>
+  </div>
+
+  <footer>
+    Hacé clic en cada materia para unirte a la clase 🐾
+  </footer>
+
+</body>
+</html>
